@@ -5,7 +5,7 @@
 #include <stdint.h>
 #include "include/ch5xx.h"
 #include "include/ch5xx_usb.h"
-#include "USBConstant.h"
+#include "USBconstant.h"
 // clang-format on
 
 // clang-format off

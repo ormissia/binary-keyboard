@@ -20,12 +20,7 @@
 ## 3. 添加 CH55x 的板卡管理器 URL
 
 1. 点击菜单栏上的 **文件** -> **首选项** -> **其他开发板管理器地址**。
-2. 在弹出的窗口中，添加以下链接：
-https://cos.thinkcreate.us/package_ch55xduino_mcs51_newest_cloudflare_index.json
-
-markdown
-复制
-编辑
+2. 在弹出的窗口中，添加以下链接：`https://cos.thinkcreate.us/package_ch55xduino_mcs51_newest_cloudflare_index.json`
 3. 然后点击 **确定**。
 
 ## 4. 安装 CH55xDuino 包
