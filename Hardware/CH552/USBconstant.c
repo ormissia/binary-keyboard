@@ -126,34 +126,44 @@ __code uint8_t ReportDescriptor[] = {
 };
 
 // String Descriptors
-__code uint8_t LanguageDescriptor[] = {0x04, 0x03, 0x09,
-                                       0x04}; // Language Descriptor
-__code uint16_t SerialDescriptor[] = {        // Serial String Descriptor
-    (((9 + 1) * 2) | (DTYPE_String << 8)),
-    'C',
-    'H',
-    '5',
-    '5',
-    'x',
-    ' ',
-    'k',
-    'b',
-    'd'};
+__code uint8_t LanguageDescriptor[] = {
+  // Language Descriptor
+  0x04,
+  0x03,
+  0x09,
+  0x04
+};
+
+__code uint16_t SerialDescriptor[] = {
+  // Serial String Descriptor
+  (((9 + 1) * 2) | (DTYPE_String << 8)),
+  0x5B89, // 安
+  0x7EA2, // 红
+  0x8C46, // 豆
+  0x7684, // 的
+  0x4E8C, // 二
+  0x8FDB, // 进
+  0x5236, // 制
+  0x952E, // 键
+  0x76D8  // 盘
+};
 __code uint16_t ProductDescriptor[] = {
-    // Produce String Descriptor
-    (((10 + 1) * 2) | (DTYPE_String << 8)),
-    'C',
-    'H',
-    '5',
-    '5',
-    'x',
-    'd',
-    'u',
-    'i',
-    'n',
-    'o',
+  // Produce String Descriptor
+  (((9 + 1) * 2) | (DTYPE_String << 8)),
+  0x5B89, // 安
+  0x7EA2, // 红
+  0x8C46, // 豆
+  0x7684, // 的
+  0x4E8C, // 二
+  0x8FDB, // 进
+  0x5236, // 制
+  0x952E, // 键
+  0x76D8  // 盘
 };
 __code uint16_t ManufacturerDescriptor[] = {
-    // SDCC is little endian
-    (((6 + 1) * 2) | (DTYPE_String << 8)), 'D', 'e', 'q', 'i', 'n', 'g',
+   // SDCC is little endian
+  (((4 + 1) * 2) | (DTYPE_String << 8)),
+  0x5B89, // 安
+  0x7EA2, // 红
+  0x8C46, // 豆
 };
